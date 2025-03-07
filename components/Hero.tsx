@@ -87,7 +87,7 @@ const Hero = () => {
             backdrop-blur-sm border border-gray-700/50 flex items-center justify-center"
           >
             <Image
-              src="/3d-model.jpg"
+              src="/3D-model.jpg"
               alt="3D Model"
               width={500}
               height={300}
