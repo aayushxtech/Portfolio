@@ -88,10 +88,11 @@ const Hero = () => {
           >
             <Image
               src="/3d-model.jpg"
-              alt="3d-model"
-              width={1080}
-              height={1080}
-            ></Image>
+              alt="3D Model"
+              width={500}
+              height={300}
+              priority
+            />
           </div>
         </motion.div>
       </div>
