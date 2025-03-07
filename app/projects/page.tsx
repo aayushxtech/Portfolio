@@ -31,7 +31,7 @@ const projects = [
     longDescription:
       "An intelligent financial assistant that helps users manage their personal finances through AI-driven insights and recommendations.",
     tech: ["React Native", "Gemini", "Firebase"],
-    repoUrl: "https://github.com/yourusername/financeai",
+    repoUrl: "https://github.com/aayushxtech/FinanceAI",
     imageUrl: "/financeai.jpg",
     features: [
       "AI-powered expense tracking",
@@ -74,7 +74,7 @@ export default function Projects() {
             and learning experience.
           </p>
           <motion.a
-            href="https://github.com/yourusername"
+            href="https://github.com/aayushxtech"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors duration-200"

@@ -16,23 +16,23 @@ export default function Home() {
 
       {/* Content Container */}
       <div className="relative">
-        {/* Hero Section */}
-        <section className="min-h-screen flex items-center">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero Section - Added pt-20 for mobile and pt-24 for larger screens */}
+        <section className="min-h-[100dvh] flex items-center justify-center py-16 sm:py-24 pt-20 sm:pt-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <Hero />
           </div>
         </section>
 
         {/* About Section */}
-        <section className="min-h-screen flex items-center">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="min-h-[100dvh] flex items-center justify-center py-16 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <About />
           </div>
         </section>
 
         {/* Projects Section */}
-        <section className="min-h-screen flex items-center">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="min-h-[100dvh] flex items-center justify-center py-16 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <ProjectsOverview />
           </div>
         </section>
