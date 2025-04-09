@@ -23,6 +23,37 @@ const projects = [
       "Community engagement tools",
     ],
   },
+
+  {
+    title: "Unsaid",
+    description:
+      "Full-stack sex education web app providing comprehensive, age-appropriate resources for all age groups.",
+    category: "Web",
+    longDescription:
+      "Unsaid is a full-stack sex education platform designed to provide accessible, accurate, and age-appropriate information about sexual health and relationships. Built with React frontend and Supabase backend, it offers interactive learning experiences, expert resources, and a safe space for users to learn about topics often left undiscussed.",
+    tech: [
+      "ReactJs",
+      "Tailwind CSS",
+      "Material UI",
+      "Supabase",
+      "Vite",
+      "PostCSS",
+      "ESLint",
+      "Prettier",
+      "date-fns",
+      "react-icons",
+    ],
+    repoUrl: "https://github.com/aayushxtech/Unsaid.git",
+    imageUrl: "/unsaid.png",
+    features: [
+      "Age-appropriate content delivery system",
+      "Interactive learning modules and quizzes",
+      "Community forum with moderation",
+      "Secure authentication and privacy features",
+      "Admin dashboard for content management",
+    ],
+    status: "Under Development",
+  },
   {
     title: "FinanceAI",
     description:

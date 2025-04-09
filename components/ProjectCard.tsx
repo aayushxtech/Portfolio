@@ -23,40 +23,22 @@ export default function ProjectCard({
   repoUrl,
   liveUrl,
   features,
-  status,
 }: ProjectCardProps) {
   return (
-    <div
-      className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl 
-      backdrop-blur-sm border border-gray-700/50 overflow-hidden transition-all duration-300
-      hover:border-gray-600/50 hover:shadow-xl"
-    >
-      {/* Image Container optimized for mobile screenshots */}
-      <div className="relative h-[400px] w-full flex justify-center bg-gradient-to-b from-gray-800 to-gray-900 p-4">
-        <div className="relative w-[220px] h-full rounded-2xl overflow-hidden">
-          <Image
-            src={imageUrl}
-            alt={title}
-            fill
-            className="object-contain transition-transform duration-500 group-hover:scale-105"
-            sizes="(max-width: 768px) 220px, 220px"
-            priority
-          />
-        </div>
-        <div
-          className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent 
-          opacity-60 transition-opacity duration-300 group-hover:opacity-80"
+    <div className="group relative overflow-hidden rounded-xl bg-gray-900/50 border border-gray-800 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10">
+      {/* Image Container */}
+      <div className="relative h-48 w-full overflow-hidden">
+        <Image
+          src={imageUrl}
+          alt={title}
+          fill
+          className="object-cover transform transition-transform duration-300 group-hover:scale-110"
+          style={{ objectPosition: "center" }}
         />
-        {status && (
-          <span
-            className="absolute top-4 right-4 px-3 py-1 text-sm bg-blue-500/20 text-blue-400 
-            rounded-full border border-blue-500/50 backdrop-blur-sm"
-          >
-            {status}
-          </span>
-        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
       </div>
 
+      {/* Content Container */}
       <div className="p-6 space-y-4">
         <div>
           <h3
