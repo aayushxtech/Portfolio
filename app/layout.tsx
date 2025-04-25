@@ -8,25 +8,29 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: {
-    default: "Aayush Samal | Full-Stack Developer",
+    default: "Aayush Samal | Full-Stack Developer & AI Enthusiast",
     template: "%s | Aayush Samal",
   },
   description:
-    "Full-Stack Developer specializing in Next.js, React, and AI technologies. Building scalable web applications and AI-powered solutions.",
+      "Aayush Samal is a Full-Stack Developer with expertise in React, Next.js, React Native, and AI. He builds scalable web and mobile apps, focusing on user experience and performance.",
   metadataBase: new URL("https://aayushsamal.vercel.app"),
   keywords: [
-    "Full-Stack Developer",
-    "React Developer",
-    "Next.js Developer",
-    "AI Developer",
     "Aayush Samal",
-    "Web Development",
+    "Full-Stack Developer",
+    "AI Developer",
+    "React Developer",
+    "Next.js Portfolio",
     "Software Engineer",
+    "Mobile App Developer",
+    "Open Source Contributor",
     "JavaScript",
     "TypeScript",
-    "React Native",
+    "Tailwind CSS",
+    "Supabase",
+    "React Native Projects",
+    "Developer Portfolio",
   ],
-  authors: [{ name: "Aayush Samal" }],
+  authors: [{ name: "Aayush Samal", url: "https://aayushsamal.vercel.app" }],
   creator: "Aayush Samal",
   publisher: "Aayush Samal",
   openGraph: {
@@ -34,23 +38,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://aayushsamal.vercel.app",
     siteName: "Aayush Samal Portfolio",
-    title: "Aayush Samal | Full-Stack Developer",
+    title: "Aayush Samal | Full-Stack Developer & AI Enthusiast",
     description:
-      "Full-Stack Developer specializing in Next.js, React, and AI technologies",
+        "Explore the personal portfolio of Aayush Samal, a full-stack web and mobile developer. Discover his projects, skills, and blog posts.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Aayush Samal - Full-Stack Developer",
+        alt: "Aayush Samal Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aayush Samal | Full-Stack Developer",
+    title: "Aayush Samal | Full-Stack Developer & AI Enthusiast",
     description:
-      "Full-Stack Developer specializing in Next.js, React, and AI technologies",
+        "Explore the portfolio of Aayush Samal—React, Next.js, and AI developer specializing in scalable applications.",
     creator: "@yourtwitterhandle",
     images: ["/og-image.jpg"],
   },
@@ -73,6 +77,7 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: {
@@ -83,34 +88,50 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Aayush Samal",
-              url: "https://aayushsamal.vercel.app",
-              sameAs: [
-                "https://github.com/aayushxtech",
-                "https://linkedin.com/in/aayush-samal",
-              ],
-              jobTitle: "Full-Stack Developer",
-              knowsAbout: [
-                "Web Development",
-                "React",
-                "React Native",
-                "Next.js",
-                "Tailwind CSS",
-                "Firebase",
-                "Supabase",
-                "AI",
-                "Mobile Development",
-              ],
-              description:
-                "Full-Stack Developer specializing in Next.js, React,R and AI technologies",
-            }),
-          }}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Aayush Samal",
+                url: "https://aayushsamal.vercel.app",
+                image: "https://aayushsamal.vercel.app/og-image.jpg",
+                jobTitle: "Full-Stack Developer & AI Enthusiast",
+                memberOf: [
+                  {
+                    "@type": "EducationalOrganization",
+                    name: "SRM Institute of Science and Technology",
+                    sameAs: "https://www.srmist.edu.in/"
+                  },
+                  {
+                    "@type": "Organization",
+                    name: "Chennai Innovators Network (CIN)"
+                  }
+                ],
+                sameAs: [
+                  "https://github.com/aayushxtech",
+                  "https://linkedin.com/in/aayush-samal"
+                ],
+                description:
+                    "Aayush Samal is a full-stack developer and AI enthusiast who builds fast, scalable web and mobile apps using Next.js, React, React Native, and modern AI technologies. Passionate about open source, hackathons, and community-driven innovation.",
+                knowsAbout: [
+                  "Web Development",
+                  "Mobile Development",
+                  "AI",
+                  "Next.js",
+                  "React",
+                  "React Native",
+                  "Tailwind CSS",
+                  "Firebase",
+                  "Supabase",
+                  "JavaScript",
+                  "TypeScript",
+                  "Django"
+                ]
+              })
+            }}
         />
+
       </head>
       <body suppressHydrationWarning>
         <Navbar />
