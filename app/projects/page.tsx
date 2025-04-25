@@ -14,7 +14,7 @@ const projects = [
     category: "Mobile",
     longDescription:
       "A mobile application designed to connect communities and facilitate real-time collaboration. Features include live chat, event management, and resource sharing.",
-    tech: ["React Native", "Firebase", "Redux", "Express"],
+    tech: ["React Native", "Firebase", "Express"],
     repoUrl: "https://github.com/aayushxtech/HACKFEST2k25",
     imageUrl: "/projects/saksham.png",
     features: [
@@ -33,23 +33,19 @@ const projects = [
       "Unsaid is a full-stack sex education platform designed to provide accessible, accurate, and age-appropriate information about sexual health and relationships. Built with React frontend and Supabase backend, it offers interactive learning experiences, expert resources, and a safe space for users to learn about topics often left undiscussed.",
     tech: [
       "ReactJs",
+      "Vite",
       "Tailwind CSS",
       "Material UI",
-      "Supabase",
-      "Vite",
-      "PostCSS",
-      "ESLint",
-      "Prettier",
-      "date-fns",
-      "react-icons",
+      "Supabase"
     ],
     repoUrl: "https://github.com/aayushxtech/Unsaid.git",
+    liveUrl: "https://unsaid-ed.vercel.app",
     imageUrl: "/unsaid.png",
     features: [
       "Age-appropriate content delivery system",
-      "Interactive learning modules and quizzes",
+      "Interactive modules, games and quizzes",
       "Community forum with moderation",
-      "Secure authentication and privacy features",
+      "Secure authentication using Supabase Auth",
       "Admin dashboard for content management",
     ],
     status: "Under Development",
@@ -71,7 +67,7 @@ const projects = [
       "Investment recommendations",
       "Chatbot support",
     ],
-    status: "Under Development",
+    status: "Under Development"
   },
   // Add more projects with categories
 ];
