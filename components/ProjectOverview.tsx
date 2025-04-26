@@ -11,9 +11,9 @@ const projects = [
     link: "/projects",
   },
   {
-    title: "FinanceAI",
+    title: "Unsaid",
     description:
-      "AI-powered financial native app assistant for personal finance. (Under Development)",
+      "A React Js web platform to teach Sex-ed to all age groups. (Developed during Xyntra'25.)",
     link: "/projects",
   },
 ];
