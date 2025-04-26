@@ -88,6 +88,7 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="Kd8euF_tCYThyxHLNGT8AfEyNpDixbWrR-wGOCv8ihs" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/profile%20pic.jpg" sizes="any" />
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
