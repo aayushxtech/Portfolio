@@ -13,9 +13,15 @@ const experiences = [
   {
     title: "Coordinater - Hackfest",
     company: "NextGen Intelligence Club",
-    duration: "2025",
+    duration: "2025 - Present",
     description: "Help in smoothly organizing the 24hr Hackathon.",
   },
+  {
+    title: "Founding Frontend Developer - Chennai Innovators Network",
+    company: "Chennai Innovators Network",
+    duration: "2025 - Present",
+    description: "Been an integral part helping build the Chennai Innovators Network's website.",
+  }
   // Add more experiences
 ];
 
@@ -40,13 +46,19 @@ const education = [
   },
 ];
 
-const clubs = [
+const clubsAndActivities = [
   {
     name: "NextGen Intelligence Club",
     role: "Technical Memeber",
     duration: "2025 - Present",
     description: "Help in organizing technical events and workshops.",
   },
+  {
+    name:"Chennai Innovators Network",
+    role: "Frontend Developer",
+    duration: "2025",
+    description: "Help in building and maintaing the Chennai Innovators Network.",
+  }
   // Add more clubs
 ];
 
@@ -113,7 +125,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Clubs Section */}
+        {/* Clubs and Activities Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -124,7 +136,7 @@ export default function About() {
             Clubs & Activities
           </h2>
           <div className="space-y-6">
-            {clubs.map((club, index) => (
+            {clubsAndActivities.map((club, index) => (
               <div
                 key={index}
                 className="p-6 bg-gray-800/50 rounded-lg border border-gray-700"

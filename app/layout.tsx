@@ -98,7 +98,7 @@ export default function RootLayout({
                 name: "Aayush Samal",
                 url: "https://aayushsamal.vercel.app",
                 image: "https://aayushsamal.vercel.app/og-image.jpg",
-                jobTitle: "Full-Stack Developer & AI Enthusiast",
+                jobTitle: "Student - SRM Institute of Science and Technology, Chennai",
                 memberOf: [
                   {
                     "@type": "EducationalOrganization",
@@ -107,7 +107,8 @@ export default function RootLayout({
                   },
                   {
                     "@type": "Organization",
-                    name: "Chennai Innovators Network (CIN)"
+                    name: "Chennai Innovators Network (CIN)",
+                    sameAs: "https://chennaiinnovatorsnetwork.vercel.app/"
                   }
                 ],
                 sameAs: [
@@ -115,7 +116,7 @@ export default function RootLayout({
                   "https://linkedin.com/in/aayush-samal"
                 ],
                 description:
-                    "Aayush Samal is a full-stack developer and AI enthusiast who builds fast, scalable web and mobile apps using Next.js, React, React Native, and modern AI technologies. Passionate about open source, hackathons, and community-driven innovation.",
+                    "Aayush Samal is a student at SRM Institute of Science and Technology, Chennai and a full-stack developer and AI enthusiast who builds fast, scalable web and mobile apps using Next.js, React, React Native, and modern AI technologies. Passionate about open source, hackathons, and community-driven innovation.",
                 knowsAbout: [
                   "Web Development",
                   "Mobile Development",
