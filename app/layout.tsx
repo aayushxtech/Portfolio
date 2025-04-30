@@ -85,59 +85,62 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="google-site-verification" content="Kd8euF_tCYThyxHLNGT8AfEyNpDixbWrR-wGOCv8ihs" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/profile%20pic.jpg" sizes="any" />
-        <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Person",
-                name: "Aayush Samal",
-                url: "https://aayushsamal.vercel.app",
-                image: "https://aayushsamal.vercel.app/og-image.jpg",
-                jobTitle: "Student - SRM Institute of Science and Technology, Chennai",
-                memberOf: [
-                  {
-                    "@type": "EducationalOrganization",
-                    name: "SRM Institute of Science and Technology",
-                    sameAs: "https://www.srmist.edu.in/"
-                  },
-                  {
-                    "@type": "Organization",
-                    name: "Chennai Innovators Network (CIN)",
-                    sameAs: "https://chennaiinnovatorsnetwork.vercel.app/"
-                  }
-                ],
-                sameAs: [
-                  "https://github.com/aayushxtech",
-                  "https://linkedin.com/in/aayush-samal"
-                ],
-                description:
-                    "Aayush Samal is a student at SRM Institute of Science and Technology, Chennai and a full-stack developer and AI enthusiast who builds fast, scalable web and mobile apps using Next.js, React, React Native, and modern AI technologies. Passionate about open source, hackathons, and community-driven innovation.",
-                knowsAbout: [
-                  "Web Development",
-                  "Mobile Development",
-                  "AI",
-                  "Next.js",
-                  "React",
-                  "React Native",
-                  "Tailwind CSS",
-                  "Firebase",
-                  "Supabase",
-                  "JavaScript",
-                  "TypeScript",
-                  "Django"
-                ]
-              })
-            }}
-        />
+    <head>
+      <meta name="google-site-verification" content="Kd8euF_tCYThyxHLNGT8AfEyNpDixbWrR-wGOCv8ihs"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta property="og:image" content="https://aayushsamal.vercel.app/og-image.jpg"/>
+      <meta name="robots" content="noindex, follow"/>
+      <link rel="icon" href="/profile%20pic.jpg" sizes="any"/>
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Aayush Samal",
+              url: "https://aayushsamal.vercel.app",
+              image: "https://aayushsamal.vercel.app/og-image.jpg",
+              jobTitle: "Student - SRM Institute of Science and Technology, Chennai",
+              memberOf: [
+                {
+                  "@type": "EducationalOrganization",
+                  name: "SRM Institute of Science and Technology",
+                  sameAs: "https://www.srmist.edu.in/"
+                },
+                {
+                  "@type": "Organization",
+                  name: "Chennai Innovators Network (CIN)",
+                  sameAs: "https://chennaiinnovatorsnetwork.vercel.app/"
+                }
+              ],
+              sameAs: [
+                "https://github.com/aayushxtech",
+                "https://linkedin.com/in/aayush-samal"
+              ],
+              description:
+                  "Aayush Samal is a student at SRM Institute of Science and Technology, Chennai and a full-stack developer and AI enthusiast who builds fast, scalable web and mobile apps.",
+              knowsAbout: [
+                "Web Development",
+                "Mobile Development",
+                "AI",
+                "Next.js",
+                "React",
+                "React Native",
+                "Tailwind CSS",
+                "Firebase",
+                "Supabase",
+                "JavaScript",
+                "TypeScript",
+                "Django"
+              ]
+            })
+          }}
+      />
+      <title></title>
 
-      </head>
-      <body suppressHydrationWarning>
-        <Navbar />
+    </head>
+    <body suppressHydrationWarning>
+    <Navbar />
         {children}
         <Analytics />
         <SpeedInsights />
